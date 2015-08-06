@@ -93,7 +93,7 @@ app.get('/:id', function(req, res){
 });
 
 // default. if it gets here its '/'
-app.use(function(req, res, next) {
+app.use(function(req, res) {
   User.find({}, function(err, users) {
     res.render('index', { "user_names": users });
   });
