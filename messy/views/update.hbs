@@ -1,0 +1,15 @@
+<title>update post</title>
+<h1>{{post.name}}</h2>
+<h3>{{post.message}}</h3>
+<br><br>
+
+
+<form id="loginformA" action="/{{post.id}}/update" method="post">
+  <input type="text" id="username" name="username">
+  <input type="text" id="message" name="message">
+  <input type="submit" value="Submit">
+</form>
+<form id="loginformA" action="/find">
+  <input type="text" id="/" name="route_tag" hidden="hidden" value="">
+  <input type="submit" value="back">
+</form>

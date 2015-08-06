@@ -1,0 +1,24 @@
+{
+  "name": "node_mongo_crud",
+  "version": "1.0.0",
+  "description": "basic crud app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackRometty/node_mongo_crud-code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackRometty/node_mongo_crud-code/issues"
+  },
+  "homepage": "https://github.com/JackRometty/node_mongo_crud-code#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "hbs": "^3.1.0",
+    "mongoose": "^4.1.1"
+  }
+}

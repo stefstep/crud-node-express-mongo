@@ -1,0 +1,24 @@
+<title>listing names</title>
+
+<h1>messages</h1>
+
+<ul>
+  {{#each user_names}}
+    <li>{{name}} <br> ----> {{message}}</li>
+    <form id="loginformA" action="/find">
+      <input type="text" id="/:id" name="route_tag" hidden="hidden" value="{{id}}">
+      <input type="submit" value="view">
+    </form>
+    <form id="destroyform" action="/find">
+      <input type="text" id="/:id/destroy" name="route_tag" hidden="hidden" value="{{id}}/destroy">
+      <input type="submit" value="delete">
+    </form>
+    <br>
+  {{/each}}
+</ul>
+<br><br>
+
+<form id="loginformA" action="/find">
+  <input type="text" id="/find" name="route_tag" hidden="hidden" value="new">
+  <input type="submit" value="new">
+</form>
